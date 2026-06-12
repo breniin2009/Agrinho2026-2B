@@ -1,0 +1,269 @@
+/* Importando uma fonte moderna e limpa */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+/* Reset de Estilos */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary-color: #2b4c7e;
+    --secondary-color: #4a7c59;
+    --accent-color: #e9c46a;
+    --text-color: #2b2d42;
+    --bg-color: #f8f9fa;
+    --card-bg: #ffffff;
+    --border-color: #e5e5e5;
+    --font-main: 'Inter', sans-serif;
+}
+
+body {
+    font-family: var(--font-main);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    padding-bottom: 60px;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, var(--primary-color), #1a3052);
+    color: #ffffff;
+    padding: 60px 0;
+    text-align: center;
+    border-bottom: 5px solid var(--secondary-color);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+header .subtitle {
+    font-size: 1.2rem;
+    opacity: 0.9;
+    font-weight: 300;
+}
+
+/* Introdução */
+.intro {
+    background-color: var(--card-bg);
+    padding: 30px;
+    border-radius: 8px;
+    margin: 40px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    border-left: 5px solid var(--primary-color);
+}
+
+.intro p {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+
+.intro p:last-child {
+    margin-bottom: 0;
+}
+
+/* Seção de Cards */
+.card-section {
+    display: block;
+    margin-bottom: 40px;
+}
+
+.card {
+    background-color: var(--card-bg);
+    padding: 30px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.card h2 {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    border-bottom: 2px solid var(--bg-color);
+    padding-bottom: 10px;
+}
+
+.card p {
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: #555;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 15px;
+}
+
+ul li::before {
+    content: "➔";
+    position: absolute;
+    left: 0;
+    color: var(--secondary-color);
+    font-weight: bold;
+}
+
+/* Tabela */
+.table-section {
+    background-color: var(--card-bg);
+    padding: 30px;
+    border-radius: 8px;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.table-section h2 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.table-section p {
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.table-responsive {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    font-size: 0.95rem;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color);
+}
+
+th {
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: 600;
+}
+
+tr:hover {
+    background-color: #fdfdfd;
+}
+
+/* Badges dentro da tabela */
+.badge {
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.badge-success { background-color: #e8f5e9; color: #2e7d32; }
+.badge-info { background-color: #e3f2fd; color: #1565c0; }
+.badge-warning { background-color: #fff3e0; color: #ef6c00; }
+
+/* Minimalismo Digital */
+.minimalism {
+    background-color: var(--card-bg);
+    padding: 30px;
+    border-radius: 8px;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.minimalism h2 {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.steps-grid {
+    margin-top: 25px;
+}
+
+.step-box {
+    background-color: var(--bg-color);
+    padding: 20px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    border-top: 4px solid var(--secondary-color);
+    position: relative;
+}
+
+.step-number {
+    position: absolute;
+    top: -15px;
+    right: 15px;
+    background-color: var(--secondary-color);
+    color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.step-box h3 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    color: #1a3052;
+}
+
+/* Caixa de Conclusão */
+.conclusion-box {
+    background: linear-gradient(135deg, var(--secondary-color), #345c3f);
+    color: white;
+    padding: 30px;
+    border-radius: 8px;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.conclusion-box h3 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+/* Rodapé */
+footer {
+    background-color: #1a3052;
+    color: #bcbcbc;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.9rem;
+    margin-top: 40px;
+}
+
+/* Responsividade Básica (Dispositivos maiores que tablets) */
+@media(min-width: 768px) {
+    .steps-grid {
+        display: table;
+        width: 100%;
+        table-layout: fixed;
+        border-collapse: separate;
+        border-spacing: 15px 0;
+    }
+    .step-box {
+        display: table-cell;
+        vertical-align: top;
+        margin-bottom: 0;
+    }
+}
